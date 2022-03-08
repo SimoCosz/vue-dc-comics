@@ -5,20 +5,13 @@
       {{text}}
     </div>
   </div>
-    <div class="banner">
-      <MainBanner />
-    </div>
 </main>
 </template>
 
 <script>
-import MainBanner from '../components/MainBanner.vue'
 
 export default {
   name: 'MainContent',
-  components: {
-    MainBanner,
-  },
 
   data() {
     return {

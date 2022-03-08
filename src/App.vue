@@ -4,6 +4,7 @@
     <HeaderContent />
     <!-- Main -->
     <MainContent />
+    <MainBanner />
     <!-- Footer -->
     <FooterContent />
   </div>
@@ -13,12 +14,14 @@
 import HeaderContent from './components/HeaderContent.vue'
 import MainContent from './components/MainContent.vue'
 import FooterContent from './components/FooterContent.vue'
+import MainBanner from './components/MainBanner.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderContent,
     MainContent,
+    MainBanner,
     FooterContent,
   }
 }
@@ -39,6 +42,10 @@ export default {
 a{
   text-decoration: none;
   color: currentColor;
+}
+
+ul {
+  list-style: none;
 }
 
 #app {

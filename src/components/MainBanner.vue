@@ -3,7 +3,9 @@
     <div class="container">
       <ul>
         <li v-for='(link, i) in links' :key='i' class="item">
-          <img :src="link.image" alt="">
+          <div class="image">
+            <img :src="link.image" alt="">
+          </div>
           <a :href="link.href">{{link.text}}</a>
         </li>
       </ul>
@@ -57,6 +59,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 70px;
 
       ul{
         display: contents;
@@ -65,9 +68,16 @@
 
       .item{
         padding: 0 20px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
 
         .image{
-          width: 30px;
+          width: 40px;
+          height: 40px;
         }
 
       }
