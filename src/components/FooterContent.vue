@@ -164,7 +164,7 @@ export default {
 
     .container{
       color: white;
-      height: 400px;
+      height: 450px;
       padding-top: 40px;
       display: flex;
       gap: 40px;
