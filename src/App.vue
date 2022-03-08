@@ -19,18 +19,37 @@ export default {
   components: {
     HeaderContent,
     MainContent,
-    FooterContent
+    FooterContent,
   }
 }
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  --color-blue: #0482F9;
+  --color-black: #4C4646;
+  
+  img{
+    max-width: 100%;
+  }
 }
 </style>
