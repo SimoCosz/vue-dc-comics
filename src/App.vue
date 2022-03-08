@@ -48,6 +48,11 @@ ul {
   list-style: none;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,8 +60,5 @@ ul {
   --color-blue: #0482F9;
   --color-black: #4C4646;
   
-  img{
-    max-width: 100%;
-  }
 }
 </style>

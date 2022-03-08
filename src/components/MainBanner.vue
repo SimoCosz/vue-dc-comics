@@ -2,9 +2,9 @@
   <div class="main-banner">
     <div class="container">
       <ul>
-        <li v-for='(link, i) in links' :key='i' class="item">
+        <li v-for="(link, i) in links" :key="i" class="item">
           <div class="image">
-            <img :src="link.image" alt="">
+            <img :src="require(`../assets${link.image}`)" alt="">
           </div>
           <a :href="link.href">{{link.text}}</a>
         </li>
@@ -21,33 +21,33 @@
       return {
         links: [
           {
-            image: '../assets/img/buy-comics-digital-comics.png',
+            image: '/img/buy-comics-digital-comics.png',
             text: 'Digital comics',
             href: '#'
           },
           {
-            image: '../assets/img/buy-comics-merchandise.png',
+            image: '/img/buy-comics-merchandise.png',
             text: 'Dc merchendise',
             href: '#'
           },
           {
-            image: '../assets/img/buy-comics-subscriptions.png',
+            image: '/img/buy-comics-shop-locator.png',
             text: 'Subscription',
             href: '#'
           },
           {
-            image: '../assets/img/buy-comics-shop-locator.png',
+            image: '/img/buy-comics-subscriptions.png',
             text: 'Comic shop locator',
             href: '#'
           },
           {
-            image: '../assets/img/buy-comics-power-visa.svg',
+            image: '/img/buy-dc-power-visa.svg',
             text: 'Dc power visa',
             href: '#'
           },
         ]
       }
-    }
+    },
   }  
 </script>
 
@@ -78,6 +78,11 @@
         .image{
           width: 40px;
           height: 40px;
+          margin-right: 10px;
+          
+          img{
+            object-fit: contain;
+          }
         }
 
       }
