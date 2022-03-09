@@ -195,6 +195,9 @@ export default {
 
   .footer{
     background-image: url('../assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
 
 
@@ -208,8 +211,9 @@ export default {
       position: relative;
 
       .logo-wrapper{
-        max-width: 450px;
+        width: 450px;
         height: 450px;
+        object-fit: cover;
       }
 
       .list{
