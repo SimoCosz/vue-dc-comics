@@ -3,6 +3,7 @@
     <!-- Header -->
     <HeaderContent />
     <!-- Main -->
+    <JumboContent />
     <MainContent />
     <MainBanner />
     <!-- Footer -->
@@ -15,6 +16,7 @@ import HeaderContent from './components/HeaderContent.vue'
 import MainContent from './components/MainContent.vue'
 import FooterContent from './components/FooterContent.vue'
 import MainBanner from './components/MainBanner.vue'
+import JumboContent from './components/JumboContent.vue'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     MainContent,
     MainBanner,
     FooterContent,
+    JumboContent
   }
 }
 </script>
