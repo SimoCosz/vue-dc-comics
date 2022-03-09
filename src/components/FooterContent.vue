@@ -236,6 +236,10 @@ export default {
         .item{
           color: #aaa;
           font-size: 12px;
+
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
 
@@ -267,6 +271,11 @@ export default {
           color: white;
           text-transform: uppercase;
           font-weight: 800;
+          cursor: pointer;
+
+          &:hover{
+            box-shadow: 2px 2px 5px black;
+          }
         }
 
         .social-link{
@@ -280,7 +289,11 @@ export default {
             padding: 20px 10px;
 
             img{
-            object-fit: contain;
+              object-fit: contain;
+
+              &:hover{
+                -webkit-filter: drop-shadow(2px 2px 2px black );
+              }
             }
           }
 
@@ -288,6 +301,11 @@ export default {
             text-transform: uppercase;
             font-weight: 900;
             color: var(--color-blue);
+
+            &:hover{
+              text-shadow: 2px 2px 5px black;
+              cursor: pointer;
+            }
           }
         }
 

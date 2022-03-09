@@ -82,6 +82,7 @@ export default {
     .logo{
       width: 50px;
       height: 50px;
+      cursor: pointer;
     }
 
     .list{
@@ -94,9 +95,14 @@ export default {
         text-transform: uppercase;
         color: var(--color-black);
         font-weight: 800;
-        padding: 100% 0;
+        padding: 23px 0;
 
         &.active{
+          color: var(--color-blue);
+          border-bottom: 5px solid var(--color-blue);
+        }
+
+        &:hover{
           color: var(--color-blue);
           border-bottom: 5px solid var(--color-blue);
         }

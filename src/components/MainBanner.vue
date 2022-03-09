@@ -59,7 +59,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 70px;
+      height: 100px;
 
       ul{
         display: contents;
@@ -74,6 +74,12 @@
         font-size: 12px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+
+        &:hover, &:hover img{
+          text-shadow: 0 0 10px white;
+          -webkit-filter: drop-shadow(2px 2px 10px white );
+        }
 
         .image{
           width: 40px;
