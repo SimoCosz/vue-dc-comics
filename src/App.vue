@@ -58,7 +58,7 @@ img{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-blue: #0482F9;
-  --color-black: #4C4646;
+  --color-black: #303030;
   
 }
 </style>

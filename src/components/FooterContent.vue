@@ -2,34 +2,33 @@
   <div class="footer">
     <div class="container">
       <div class="list">
-        <h4 class="title">Dc comics</h4> 
         <ul>
-          <li v-for='(link, i) in links' :key='i' class="item">
-            <a :href="link.href">{{link.text}}</a>
-          </li>
-        </ul>
-        <h4 class="title">Shop</h4> 
-        <ul>
-          <li v-for='(link, i) in links2' :key='i' class="item">
-            <a :href="link.href">{{link.text}}</a>
-          </li>
-        </ul>
-      </div>
-      <div class="list">
-        <h4 class="title">Dc</h4> 
-        <ul>
-          <li v-for='(link, i) in links3' :key='i' class="item">
-            <a :href="link.href">{{link.text}}</a>
+          <li v-for="(el, i) in footerMenu" :key='i' class="item-wrap">
+            <h4 class="title">{{el.title}}</h4> 
+            <ul>
+              <li v-for='(link, i) in el.links' :key='i' class="item">
+                <a :href="link.href">{{link.text}}</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-      <div class="list">
-        <h4 class="title">Sites</h4> 
-        <ul>
-          <li v-for='(link, i) in links4' :key='i' class="item">
-            <a :href="link.href">{{link.text}}</a>
+      <div class="logo-wrapper">
+        <img class="logo-bg" src="../assets/img/dc-logo-bg.png" alt="">
+      </div>
+    </div>
+    
+    <div class="social-banner">
+      <div class="social">
+      <button>Sign up now</button>
+      <div class="social-link">
+      <span>Follow US</span>
+        <ul class="icon-wrap">
+          <li v-for="(el, i) in socialIcon" :key="i">
+            <a href=""><img :src="require(`../${el.icon}`)" alt=""></a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
     
@@ -42,116 +41,151 @@ export default {
 
   data() {
     return {
-      links: [
+      footerMenu: [
         {
-          text: 'character',
-          href: '#'
+          title: 'DC comics',
+          links: [
+            {
+              text: 'Character',
+              href: '#'
+            },
+            {
+              text: 'Comics',
+              href: '#'
+            },
+            {
+              text: 'Movies',
+              href: '#'
+            },
+            {
+              text: 'TV',
+              href: '#'
+            },
+            {
+              text: 'Games',
+              href: '#'
+            },
+            {
+              text: 'Videos',
+              href: '#'
+            },
+            {
+              text: 'News',
+              href: '#'
+            },
+          ],
         },
-        {
-          text: 'Comics',
-          href: '#'
-        },
-        {
-          text: 'Movies',
-          href: '#'
-        },
-        {
-          text: 'Tv',
-          href: '#'
-        },
-        {
-          text: 'Games',
-          href: '#'
-        },
-        {
-          text: 'Videos',
-          href: '#'
-        },
-        {
-          text: 'News',
-          href: '#'
-        },
-      ],
 
-      links2:[
         {
-          text: 'Shop DC',
-          href: '#'
+          title: 'Shop',
+          links: [
+            {
+            text: 'Shop DC',
+            href: '#'
+            },
+            {
+            text: 'Shop DC Collectibles',
+            href: '#'
+            },
+          ],
         },
-        {
-          text: 'Sho DC Collectibles',
-          href: '#'
-        },
-      ],
 
-      links3: [
         {
-          text: 'Terms Of Use',
-          href: '#'
+          title: 'DC',
+          links: [
+            {
+            text: 'Terms Of Use',
+            href: '#'
+            },
+            {
+              text: 'Privacy policy (New)',
+              href: '#'
+            },
+            {
+              text: 'Ad Choices',
+              href: '#'
+            },
+            {
+              text: 'Advertising',
+              href: '#'
+            },
+            {
+              text: 'Jobs',
+              href: '#'
+            },
+            {
+              text: 'Subscriptions',
+              href: '#'
+            },
+            {
+              text: 'Talent Workshops',
+              href: '#'
+            },
+            {
+              text: 'CPSC Certificates',
+              href: '#'
+            },
+            {
+              text: 'Ratings',
+              href: '#'
+            },
+            {
+              text: 'Shop Help',
+              href: '#'
+            },
+            {
+              text: 'Contact Us',
+              href: '#'
+            },
+          ],
         },
+
         {
-          text: 'Privacy policy (New)',
-          href: '#'
-        },
-        {
-          text: 'Ad Choices',
-          href: '#'
-        },
-        {
-          text: 'Advertising',
-          href: '#'
-        },
-        {
-          text: 'Jobs',
-          href: '#'
-        },
-        {
-          text: 'Subscriptions',
-          href: '#'
-        },
-        {
-          text: 'Talent Worshops',
-          href: '#'
-        },
-        {
-          text: 'CPSC Certificates',
-          href: '#'
-        },
-        {
-          text: 'Ratings',
-          href: '#'
-        },
-        {
-          text: 'Shop Help',
-          href: '#'
-        },
-        {
-          text: 'Contact Us',
-          href: '#'
-        },
+          title: 'Sites',
+          links: [
+            {
+              text: 'DC',
+              href: '#'
+            },
+            {
+              text: 'MAD Magazine',
+              href: '#'
+            },
+            {
+              text: 'DC Kids',
+              href: '#'
+            },
+            {
+              text: 'DC Universe',
+              href: '#'
+            },
+            {
+              text: 'DC Power Visa',
+              href: '#'
+            },
+          ],
+        }
       ],
-      links4: [
+      socialIcon: [
         {
-          text: 'DC',
-          href: '#'
+          icon: 'assets/img/footer-facebook.png'
         },
         {
-          text: 'MAD Magazine',
-          href: '#'
+          icon: 'assets/img/footer-twitter.png'
         },
         {
-          text: 'DC Kids',
-          href: '#'
+          icon: 'assets/img/footer-youtube.png'
         },
         {
-          text: 'DC Universe',
-          href: '#'
+          icon: 'assets/img/footer-pinterest.png'
         },
         {
-          text: 'DC Power Visa',
-          href: '#'
+          icon: 'assets/img/footer-periscope.png'
         },
       ]
+
+
+
     }
   }
 }
@@ -161,25 +195,100 @@ export default {
 
   .footer{
     background-image: url('../assets/img/footer-bg.jpg');
+    position: relative;
+
+
 
     .container{
       color: white;
       height: 450px;
-      padding-top: 40px;
       display: flex;
+      justify-content: space-between;
       gap: 40px;
-      text-transform: uppercase;
+      position: relative;
 
-      .title{
-        font-weight: 800;
-        margin: 10px 0;
+      .logo-wrapper{
+        max-width: 450px;
+        height: 450px;
+      }
+
+      .list{
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        .item-wrap{
+          padding: 20px;
+        }
+
+        .title{
+          font-weight: 800;
+          margin: 10px 0;
+          text-transform: uppercase;
+        }
+
+        .item{
+          color: #aaa;
+          font-size: 12px;
+        }
+      }
+
+      ul{
+        display: contents;
+      }
+    }
+
+    .social-banner{
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      width: 100%;
+      padding: 20px;
+      background-color: var(--color-black);
+
+      .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0 auto;
+        width: 1024px;
+
+        button{
+          background-color: transparent;
+          border: 2px solid var(--color-blue);
+          padding: 10px;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 800;
+        }
+
+        .social-link{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .icon-wrap{
+            display: flex;
+            gap: 20px;
+            padding: 20px 10px;
+
+            img{
+            object-fit: contain;
+            }
+          }
+
+          span{
+            text-transform: uppercase;
+            font-weight: 900;
+            color: var(--color-blue);
+          }
+        }
 
       }
 
-      .item{
-        color: #aaa;
-        font-size: 12px;
-      }
     }
   }
 
