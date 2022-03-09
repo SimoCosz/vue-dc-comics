@@ -5,6 +5,9 @@
       :thumb= 'comic.thumb'
       :series= 'comic.series'
        />
+       <button class="btn">
+         Load more
+       </button>
   </div>
 </main>
 </template>
@@ -112,13 +115,30 @@ export default {
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
+
+      .card{
+        color: white;
+        font-size: 9px;
+        text-transform: uppercase;
+      }
+
+      .btn{
+        background-color: var(--color-blue);
+        border: none;
+        margin-top: 30px;
+        padding: 10px 50px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+
+        &:hover{
+          box-shadow: 2px 2px 5px black;
+        }
+      }
     }
     
-    .card{
-      color: white;
-      font-size: 9px;
-      text-transform: uppercase;
-    }
+
+    
   }
 
 </style>
