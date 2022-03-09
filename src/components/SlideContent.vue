@@ -18,7 +18,7 @@ export default {
 
 <style lang='scss' scoped>
   .comic-card{
-    width: calc((100% / 6) - 30px);
+    width: calc((100% / 6) - 10px);
 
     img{
       object-fit: cover;
