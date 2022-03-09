@@ -1,17 +1,17 @@
 <template>
   <div class="comic-card">
     <figure>
-      <img :src="thumb" alt="">
+      <img :src="img" alt="">
     </figure>
-    <h3>{{series}}</h3>
+    <h3>{{title}}</h3>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    thumb: String,
-    series: String
+    img: String,
+    title: String
   },
 }
 </script>

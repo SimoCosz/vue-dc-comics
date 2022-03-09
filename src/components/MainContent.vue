@@ -2,8 +2,8 @@
 <main class="main">
   <div class="container">
       <SlideComponent class="card" v-for="(comic, i) in comics" :key="i"
-      :thumb= 'comic.thumb'
-      :series= 'comic.series'
+      :img= 'comic.thumb'
+      :title= 'comic.series'
        />
        <button class="btn">
          Load more
