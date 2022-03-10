@@ -120,6 +120,7 @@ export default {
         color: white;
         font-size: 9px;
         text-transform: uppercase;
+        width: calc((100% / 6) - 10px);
       }
 
       .btn{
